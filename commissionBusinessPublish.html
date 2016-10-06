@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/autoFun.js"></script>
+    <title>委托发布</title>
+</head>
+<body>
+<form class="commission_publish" action="" method="get">
+    <textarea placeholder="配置 需要手动填写"></textarea>
+    <button>发布</button>
+</form>
+<script>
+    var scriptNode=document.createElement("script");
+    scriptNode.setAttribute("data-main","js/app.js?v=1."+new Date);
+    scriptNode.setAttribute("src","js/lib/require.min.js");
+    document.body.appendChild(scriptNode);
+</script>
+</body>
+</html>
