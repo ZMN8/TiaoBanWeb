@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/autoFun.js"></script>
+    <title>卖车管理</title>
+</head>
+<body>
+<header class="sellCar_header">
+    <a href="sellCarPublish.html">发布一条</a>
+</header>
+<section class="wrapper sellCar_submit">
+<form  action="" id="sellManage">
+    <p class="reload sellCar-reload">下拉刷新</p>
+    <ul class="sellCar_list">
+        <li class="clearfix">
+            <span class="select">选择图标<input type="checkbox" class="check"/></span>
+            <img src="images/onsale_li_1.jpg" alt="展示图"/>
+            <dl class="sellCar_content">
+                <dt><strong>15款奔驰ML350中东四驱3.0T</strong></dt>
+                <dd class="clearfix">
+                    <span class="dd_price">75.5<i>万元</i></span>
+                    <span class="dd_browse">浏览 <i>134</i></span>
+                </dd>
+            </dl>
+        </li>
+        <li class="clearfix">
+            <span class="select">选择图标<input type="checkbox" class="check"/></span>
+            <img src="images/onsale_li_2.jpg" alt="展示图"/>
+            <dl class="sellCar_content">
+                <dt><strong>15款奔驰ML400加规四驱3.0L</strong></dt>
+                <dd class="clearfix">
+                    <span class="dd_price">75.5<i>万元</i></span>
+                    <span class="dd_browse">浏览 <i>1343</i></span>
+                </dd>
+            </dl>
+        </li>
+        <li class="clearfix">
+            <span class="select">选择图标<input type="checkbox" class="check"/></span>
+            <img src="images/onsale_li_2.jpg" alt="展示图"/>
+            <dl class="sellCar_content">
+                <dt><strong>15款奔驰ML400加规四驱3.0L</strong></dt>
+                <dd class="clearfix">
+                    <span class="dd_price">75.5<i>万元</i></span>
+                    <span class="dd_browse">浏览 <i>1343</i></span>
+                </dd>
+            </dl>
+        </li>
+        <li class="clearfix">
+            <span class="select">选择图标<input type="checkbox" class="check"/></span>
+            <img src="images/onsale_li_1.jpg" alt="展示图"/>
+            <dl class="sellCar_content">
+                <dt><strong>15款奔驰ML350中东四驱3.0T</strong></dt>
+                <dd class="clearfix">
+                    <span class="dd_price">75.5<i>万元</i></span>
+                    <span class="dd_browse">浏览 <i>134</i></span>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+    <p class="append sellCar-append" style="display: none">加载更多</p>
+</form>
+</section>
+<footer class="sellCar_footer">
+    <input type="submit" value="删除（0）" form="sellManage"/>
+</footer>
+
+<script>
+    var scriptNode=document.createElement("script");
+    scriptNode.setAttribute("data-main","js/app.js?v=1."+new Date);
+    scriptNode.setAttribute("src","js/lib/require.min.js");
+   document.body.appendChild(scriptNode);
+</script>
+</body>
+</html>

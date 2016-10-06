@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/autoFun.js"></script>
+    <title>买车管理</title>
+</head>
+<body>
+<header class="sellCar_header">
+    <a href="buyCarPublish.html">发布一条</a>
+</header>
+<section class="wrapper sellCar_submit">
+    <form  action="" id="sellManage" method="get">
+        <p class="reload sellCar-reload">下拉刷新</p>
+        <ul class="sellCar_list">
+            <li class="clearfix">
+                <span class="select">选择图标<input type="checkbox" class="check"/></span>
+                <img src="images/buy_li.jpg" alt="展示图"/>
+                <dl class="sellCar_content">
+                    <dt><strong>15款宝马X6墨西哥版四驱3.0L</strong></dt>
+                    <dd class="clearfix">
+                        <span class="dd_price">北京</span>
+                        <span class="dd_browse">全款</span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="clearfix">
+                <span class="select">选择图标<input type="checkbox" class="check"/></span>
+                <img src="images/buy_li.jpg" alt="展示图"/>
+                <dl class="sellCar_content">
+                    <dt><strong>15款奔驰ML400加规四驱3.0L</strong></dt>
+                    <dd class="clearfix">
+                        <span class="dd_price">北京</span>
+                        <span class="dd_browse">定金</span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="clearfix">
+                <span class="select">选择图标<input type="checkbox" class="check"/></span>
+                <img src="images/buy_li.jpg" alt="展示图"/>
+                <dl class="sellCar_content">
+                    <dt><strong>15款奔驰ML400加规四驱3.0L</strong></dt>
+                    <dd class="clearfix">
+                        <span class="dd_price">北京</span>
+                        <span class="dd_browse">定金</span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="clearfix">
+                <span class="select">选择图标<input type="checkbox" class="check"/></span>
+                <img src="images/buy_li.jpg" alt="展示图"/>
+                <dl class="sellCar_content">
+                    <dt><strong>15款宝马X6墨西哥版四驱3.0L</strong></dt>
+                    <dd class="clearfix">
+                        <span class="dd_price">北京</span>
+                        <span class="dd_browse">全款</span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="clearfix">
+                <span class="select">选择图标<input type="checkbox" class="check"/></span>
+                <img src="images/buy_li.jpg" alt="展示图"/>
+                <dl class="sellCar_content">
+                    <dt><strong>15款宝马X6墨西哥版四驱3.0L</strong></dt>
+                    <dd class="clearfix">
+                        <span class="dd_price">北京</span>
+                        <span class="dd_browse">全款</span>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+        <p class="append sellCar-append" style="display: none">加载更多</p>
+    </form>
+</section>
+<footer class="sellCar_footer">
+    <input type="submit" value="删除（0）" form="sellManage"/>
+</footer>
+<script>
+    var scriptNode=document.createElement("script");
+    scriptNode.setAttribute("data-main","js/app.js?v="+new Date);
+    scriptNode.src="js/lib/require.min.js";
+    document.body.appendChild(scriptNode);
+</script>
+</body>
+</html>

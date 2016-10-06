@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/* CSS Document */
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1474778714_5252447.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1474778714_5252447.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1474778714_5252447.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1474778714_5252447.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1474778714_5252447.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, div, p, h1, h2, h3, h4, ul, li, dl, dt, dd, ol, form, table, tr, td, span, label, input, select, option, a, img, i, em, strong, b {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+}
+
+html {
+    /*rem单位永远以html做参考缩放；百分比和em以父元素做参考*/
+    font-size: 625%; /*16*6.25=100px*/
+    width:100%;
+}
+
+body {
+    font-family: "微软雅黑";
+    color: #000000;
+    max-width: 750px; /*效果图的宽度*/
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 0.26rem; /*body中默认使用做多的字体大小*/
+    background: #f7f7f7;
+    width:100%;
+    overflow: hidden;
+}
+.clearfix {*zoom: 1;}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+::-webkit-input-placeholder{color: #c7c7cd;}
+:-moz-placeholder{color: #c7c7cd;}
+::-moz-placeholder{color: #c7c7cd;}
+:-ms-input-placeholder{color: #c7c7cd;}
+input{font-family: "微软雅黑";}
+/*index CSS*/
+#index_header{width:100%;height:0.78rem;margin-bottom:0.25rem;}
+#index_header>h1{width:100%;height:100%;font-family: "宋体";background: #ffffff;line-height: 0.78rem;font-size: 0.26rem;}
+span[class="name"]{width:auto;float:left;margin-left: 0.35rem;}
+span[class="company"]{width:auto;float:right;margin-right: 0.25rem;color:#666666;font-weight:100;}
+#Slide{margin:0.2rem auto 0.25rem;width: 100%;height:3rem;}
+#index_slide{width:100%;height:100%;}
+#index_slide img{width:100%;height:100%;}
+#list{width:7.2rem;height:auto;margin:0 auto;overflow: hidden;}
+#list ul{width:110%;}
+#list li{float:left;width:3.48rem;height:1.48rem;margin:0 0.2rem 0.15rem 0;text-align: center;line-height: 1.5rem;font-size: 0.34rem;background-color:#ecee11;border: #d3d515 solid 1px;border-radius: 0.08rem;position: relative;}
+#list li i{position: absolute;background:url(../images/sprite.png) no-repeat;bottom:0;left: 0;background-size:1.74rem 5.55rem;}
+#list #li1{background-position: 0 0;width:1.03rem;height:0.92rem;}
+#list #li2{background-position: 0 -0.92rem;width:0.54rem;height:0.98rem;}
+#list #li3{background-position: 0 -1.9rem;width:0.92rem;height:0.89rem;}
+#list #li4{background-position: 0 -2.79rem;width:0.79rem;height:0.89rem;}
+#list #li5{background-position: 0 -3.68rem;width:0.90rem;height:0.97rem;}
+#list #li6{background-position: 0 -4.65rem;width:0.84rem;height:0.90rem;}
+#tel{color: #666666;font-weight: bold;line-height: 0.35rem;margin-top: 0.63rem;text-align: center;}
+/*footer CSS*/
+#index-footer{position: absolute;z-index:2;bottom:0;left: 0;width:100%;height:0.99rem;border-top:1px #c7c7cd solid;background-color: #ffffff;}
+.footer_box{width:4.40rem;height:100%;margin: 0.17rem auto 0;}
+.footer_box .home{float: left;width:auto;}
+.footer_box .info{float: right;width:auto;}
+.footer_box i{font-size: 0.44rem;color: #999999;display: block;}
+.footer_box .homeIcon{font-size: 0.6rem;color: #999;margin:-0.06rem 0 -0.05rem 0;}
+.footer_box .infoIcon{padding-bottom: 0.05rem;}
+.footer_box span{font-size: 0.2rem;color: #999;text-align: center;line-height: 0.3rem;width: 100%;display: block;}
+
+
+/*onSale CSS*/
+#onSale_header{position:absolute;z-index:2;top:0;left: 0;height:0.78rem;width:100%;background:#ffffff;margin-bottom: 1px;}
+#onSale_header ul{padding:0 0.2rem 0 0.2rem;height:100%;}
+#onSale_header li{float: left;height:100%;}
+#filter,#brand,#sort{padding:0 0.9rem 0 0.9rem;line-height: 0.78rem;color:#666666;}
+#wrapper{position: absolute;top:1.1rem;bottom: 1rem;overflow: hidden;z-index: 1;width: 100%;}
+.onsale_list,.commission-list{margin-bottom: 1rem;}
+.onsale_list li,.commission-list li{height:2rem;padding:0.26rem 0 0 0.16rem;background: #ffffff;border-bottom: 1px solid #e5e5e5;}
+.onsale_list img{width:1.98rem;height:1.48rem;border: 1px solid #e5e5e5;float: left;}
+.onsale_list_txt,.buyCar-list-txt{float: left;margin-left: 0.3rem;}
+.onsale_list_txt dt,.buyCar-list-txt dt{font-size: 0.32rem;line-height: 0.42rem;margin-bottom: 0.53rem;}
+.onsale_list_txt dd,.buyCar-list-txt dd{height:0.56rem;width:4.26rem;padding:0 0.04rem 0 0;}
+.dd_price,.dd-place{float:left;color:#d5d713;font-size: 0.32rem;line-height: 0.56rem;}
+.dd_price i{font-size: 0.2rem;font-style: normal;}
+.dd_browse i{font-style: normal;}
+.dd_browse,.dd-money{float: right;color:#c1c1c1;font-size: 0.2rem;line-height: 0.39rem;margin-top:0.17rem;}
+.reload{position: absolute;top:-0.3rem;left: 0;width:100%;line-height: 0.3rem;text-align: center;height:0.3rem;font-size: 0.16rem;}
+.append{position: absolute;bottom:-0.3rem;left: 0;width:100%;line-height: 0.3rem;text-align: center;height:0.3rem;font-size: 0.16rem;}
+/*fix_demo*/
+.fix{position: fixed;z-index:99;top:0;left:-100%;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+.fix ul{width:75%;height:100%;background: #ffffff;overflow-y: scroll;}
+.fix ul ul{width:100%;padding-bottom: 0.2rem;display: none;}
+.fix ul li{border-bottom: 1px solid #999999;font-size: 0.32rem;line-height: 0.8rem;padding-left:0.5rem;cursor: pointer;}
+.fix ul ul ul li{border-bottom: 1px dashed #000000;}
+.fix_btn{position: fixed;bottom:0;left:-100%;z-index: 9;width:75%;background: #ffffff;}
+.fix_content{font-size: 0.3rem;line-height: 0.5rem;padding:0.3rem;}
+.fix_content span{margin-right:0.15rem;height:0.21rem;border: 1px solid #000000;padding:0 0.05rem;display: none;}
+.fix_button{height:0.8rem;width:100%;padding-top:0.2rem;}
+.fix_button input{float: right;display: inline;margin-right: 0.15rem;width:1.1rem;height:0.6rem;text-align: center;line-height: 0.6rem;color: #ffffff;border: 0 none;font-size: 0.3rem;}
+.fix_submit{background-color: #d31131;}
+.fix_cancel{background-color: #999;}
+
+/*details CSS*/
+.details_body{background-color: #f1f1f1;}
+.details_img{width:100%;height:3rem;margin-bottom: 0.15rem;}
+.details_img img{width:100%;height:100%;}
+.details_content{padding:0.19rem 0 0 0.45rem;background-color:#ffffff;border-bottom: 1px solid #c8c7cc;margin-bottom: 0.15rem;}
+.details_content dt{font-size: 0.32rem;line-height: 0.68rem;padding-left:0.06rem;}
+.details_content p{float: left;height:0.5rem;line-height: 0.5rem;color:#999999;}
+.con1{width:2.25rem;}
+.con2{width:4.79rem;}
+.details_content .con3{width:4.79rem;font-size:0.34rem;line-height: 1.12rem; font-family:"宋体";color:#d5d713;height:1.12rem;}
+.deploy{padding:0.29rem 0.43rem 0.24rem 0.3rem;border-bottom:1px solid #c8c7cc;margin-bottom:0.15rem;background-color: #ffffff;}
+.deploy p{float: left;line-height: 0.32rem;color: #c7c7cd;}
+.deploy_val{height:0.96rem;width:6.09rem;margin-left:0.09rem;display:inline;text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
+.details_inform{padding: 0.12rem 0 0.28rem 0.32rem;background-color: #ffffff;border-bottom: 1px solid #c8c7cc;font-weight: bold;margin-bottom: 1rem;}
+.details_inform dt{line-height: 0.6rem;font-size: 0.32rem;}
+.details_inform dd{line-height: 0.5rem;font-size: 0.26rem;color: #c1c1c1;}
+.details_footer{position: fixed;bottom: 0;left: 0;background-color: #f4f4f4;height:1rem;line-height:1rem;width:100%;text-align: center;border-top:1px solid #c8c7cc;}
+.details_footer span{color: #999999;font-size: 0.34rem;}
+.details_footer .telIcon{color: #999999;font-size: 0.4rem;}
+
+/*mySellCar*/
+.sellCar_header{width:100%;height:0.96rem;padding-top:0.23rem;background-color: #ffffff;position: absolute;top:0;left: 0;z-index: 2;}
+.sellCar_header a{width:3.81rem;height:0.65rem;border:1px solid #ecee11;color:#dadc3c;text-align: center;line-height: 0.65rem;margin:0 auto;}
+.sellCar_submit{padding-top: 0.23rem; position: absolute;top:1.13rem;bottom:1rem;width: 100%;overflow: hidden;}
+.sellCar_list li{background-color: #ffffff;padding:0.27rem 0.39rem 0.21rem 0.23rem;border-bottom: #e5e5e5 1px solid;}
+.sellCar_list a{width:100%;height:100%;}
+.select{float:left;margin-top:0.43rem;width:0.44rem;height:0.44rem;background: url("../images/sprite.png") no-repeat -1.31rem -0.45rem;background-size:1.74rem 5.55rem;text-indent: -99em;overflow:hidden;margin-right:0.24rem;}
+.selected{background-position:-1.31rem 0;}
+.sellCar_list{margin-bottom: 1rem;}
+.sellCar_list img{float:left;width:1.98rem;height:1.48rem;border: 1px solid #e5e5e5;margin-right:0.27rem;}
+.sellCar_content{float: left;}
+.sellCar_content dt{line-height: 0.4rem;font-family: "宋体";font-size:0.32rem;width:3.90rem;margin-bottom: 0.11rem;}
+.sellCar_content dd{width:3.60rem;}
+.sellCar_footer{position: absolute;bottom: 0;left:0;width:100%;height:0.99rem;border-top:1px #c7c7cd solid;z-index: 2;}
+.sellCar_footer input{width:100%;height:100%;background: #d31131;border: 0 none;text-align: center;line-height: 0.99rem;font-size: 0.34rem;color: #ffffff;font-family: "微软雅黑";}
+.sellCar-reload{top:-0.5rem;}
+
+/*saleCarPublish css*/
+.publish{width:7.2rem;padding-left:0.3rem;margin:0.5rem 0 0.12rem 0 ;border-bottom:#c8c7cc 1px solid;border-top: 1px #c8c7cc solid;background-color: #ffffff;}
+.publish li{position:relative;height: 0.88rem;width:6.5rem;padding-right:0.7rem;}
+.publish label{float:left;line-height: 0.88rem;}
+.publish-common input{float:right;width:5.39rem;height:0.88rem;text-align: right;font-size: 0.26rem;color: #000000;line-height: 0.88rem;border: 0 none;outline: medium;}
+.icon{position: absolute;right:0;top:0;z-index:9;width:0.7rem;height:0.88rem;background: url("../images/icoin_1.jpg") no-repeat;background-size: 0.7rem 0.88rem;text-indent: -99em;overflow: hidden;}
+.publish-deploy input{width:100%;font-size: 0.26rem;color: #000000;line-height: 0.88rem;border: 0 none;outline: medium;}
+.publish .line{width:6.5rem;height:1px;background-color: #c8c7cc;text-indent: -99em;overflow: hidden;}
+.publish-deploy{margin-top: 0.68rem;height:0.88rem;}
+.publish-picture{position:relative;margin-top:0.33rem;margin-bottom:1.08rem;}
+.publish-picture input{position:absolute;top:0;left:0;height:0.88rem;width:100%;opacity:0;border: 0 none;background: url("../images/pub_pictrue_bg.jpg") no-repeat;background-size: 2.11rem 0.88rem;}
+.file-bg{display:block;height:0.88rem;width:100%;background: url("../images/pub_pictrue_bg.jpg") no-repeat;background-size: 2.11rem 0.88rem;}
+.publish-footer{position:fixed;z-index:88;bottom:0;left:0;width:100%;height:1rem;text-align: center;}
+.publish-footer button{width:6.8rem;height:100%;font-size: 0.34rem;font-weight:bold;background-color: #f1f330;border: 0 none;border-radius:0.05rem;outline: medium; }
+.publish-select{background-color:#c7c7cd;}
+
+/*buyCar CSS*/
+.buyCar-list-txt  dt{margin-bottom: 0.1rem;}
+.buyCar-list-txt  .buy-deploy{margin-bottom: 0.28rem;height:0.24rem;line-height: 0.24rem;color:#b8b8b8;font-size: 0.2rem;text-overflow: ellipsis;white-space:nowrap;overflow: hidden;}
+
+/*buyDetails css*/
+.bD_header{padding:0.32rem 0 0.22rem 0.46rem;background: #ffffff;margin-bottom: 0.3rem;}
+.bD_header dt,.bD_header dd{float: left;}
+.bD_header h3{font-size: 0.34rem;height:0.48rem;line-height: 0.48rem;}
+.bD_header p{font-size: 0.26rem;height:0.48rem;line-height: 0.48rem;color:#e5e5e5;}
+.bD_header img{width:0.85rem;height:0.85rem;margin-right: 0.18rem;}
+.bD_content{padding:0.35rem 0 0 0.47rem;margin-bottom: 0.3rem;}
+.bD_content .con1{width:2.29rem;}
+.bD_content .con2{width:4.73rem;}
+.bD_content .con3{font-family: "微软雅黑";}
+
+/*commissionBusiness CSS*/
+.commission-list img{float: left;width:1.11rem;height:0.96rem;border-right:#c7c7cd solid 1px; }
+.commission-list .buyCar-list-txt {margin-left: 0.62rem;}
+.commission-list .buyCar-list-txt  dd{width:5rem;}
+
+
+/*commissionBusiness_pub_demo*/
+.commission_publish{margin-top:0.18rem;width:100%;}
+.commission_publish textarea{width:6.9rem;height:3.28rem;padding:0.26rem 0.3rem 0 0.3rem;margin-bottom: 2.02rem;background-color: #ffffff;color: #000000;outline: medium;line-height: 0.41rem;font-size: 0.32rem;border: 0 none;resize: none;border-bottom: 1px #c8c7cc solid;}
+.commission_publish button{display:block;width:6.8rem;height:1rem;background-color: #f1f330;font-size: 0.34rem;font-weight:bold;border: 0 none;border-radius: 0.04rem;outline: medium;margin: 0 auto;}
