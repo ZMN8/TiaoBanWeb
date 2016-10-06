@@ -74,20 +74,19 @@ define(['z','zeptoTouch','zeptoAnimate'],function($,ZT,ZA){
         },
         subFun:function(){
             var that=this;
-            var bool=false;
-            that.subBtn.tap(function(){
-               $("input").each(function(){
-                   if(this.value==""){
-                       bool=true;
-                       return false;
-                   }
-               });
-                if(bool){
-                    that.formNode.submit(function(){
+            that.formNode.submit(function(){
+                var bool=false;
+                $("input").each(function(){
+                    if(this.value==""){
+                        alert("请完善信息！");
+                        bool=true;
                         return false;
-                    })
+                    }
+                });
+                if(bool){
+                    return false;
                 }
-            })
+        })
         },
         fixDivClickFun:function(){//移出fix
             var that=this;
@@ -114,4 +113,4 @@ define(['z','zeptoTouch','zeptoAnimate'],function($,ZT,ZA){
     return function(){
         json.init();
     };
-})
+});

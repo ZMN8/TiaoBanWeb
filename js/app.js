@@ -37,7 +37,8 @@ requirejs(["judgeUrl"],function(judgeUrl){
         })
     }
     if(judgeUrl()=="onSale"){
-        requirejs(["scrollAppendMore"],function(scrollAppendMore){//加载模块
+        requirejs(["scrollAppendMore","filterAnimate"],function(scrollAppendMore,filterAnimate){//加载模块
+            filterAnimate();
             scrollAppendMore({
                 type:"get",
                 url:"json/json.json?v=1.2.3",
@@ -58,9 +59,7 @@ requirejs(["judgeUrl"],function(judgeUrl){
                 }
             });
         });
-        requirejs(["filterAnimate"],function(filterAnimate) {//加载模块
-            filterAnimate();
-        });
+
     }
     if(judgeUrl()=="mySellCar"){
         requirejs(["scrollAppendMore","carManage"],function(scrollAppendMore,carManage){//加载模块
@@ -94,7 +93,8 @@ requirejs(["judgeUrl"],function(judgeUrl){
         })
     }
     if(judgeUrl()=="buyCar"){
-        requirejs(["scrollAppendMore"],function(scrollAppendMore){
+        requirejs(["scrollAppendMore","filterAnimate"],function(scrollAppendMore,filterAnimate){
+            filterAnimate();
             scrollAppendMore({
                 type:"get",
                 url:"json/buyCar.json?a="+new Date,
